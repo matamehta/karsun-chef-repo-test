@@ -20,3 +20,8 @@ cookbook_file "/usr/share/nginx/html/index2.html" do
   source "index2.html"
   mode "0664"
 end
+
+cookbook_file "/etc/nginx/conf.d/default.conf" do
+  source "default.conf"
+  mode "0664"
+end
